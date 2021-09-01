@@ -1,0 +1,10 @@
+LOCAL_PATH := .
+include $(CLEAR_VARS)
+include $(GAPPS_CLEAR_VARS)
+LOCAL_MODULE := GoogleRecorder
+LOCAL_PACKAGE_NAME := com.google.android.apps.recorder
+
+GAPPS_LOCAL_OVERRIDES_MIN_VARIANT := full
+GAPPS_LOCAL_OVERRIDES_PACKAGES := Recorder
+
+include $(BUILD_GAPPS_PREBUILT_APK)
